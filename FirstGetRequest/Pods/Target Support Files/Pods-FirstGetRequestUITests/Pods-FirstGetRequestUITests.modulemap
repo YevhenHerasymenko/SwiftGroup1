@@ -1,0 +1,6 @@
+framework module Pods_FirstGetRequestUITests {
+  umbrella header "Pods-FirstGetRequestUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

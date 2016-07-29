@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrophyTableViewCell" rowHeight="71" id="KGk-i7-Jjw" customClass="TrophyTableViewCell" customModule="TrophyList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Owz-jO-w1j">
+                        <rect key="frame" x="10" y="5" width="53" height="53"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="53" id="2aM-fQ-twS"/>
+                            <constraint firstAttribute="width" constant="53" id="T15-VK-Hia"/>
+                        </constraints>
+                    </imageView>
+                    <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q8e-TK-5JL">
+                        <rect key="frame" x="73" y="13" width="43" height="21"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUN-Ki-rlA">
+                        <rect key="frame" x="73" y="39" width="42" height="21"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bUN-Ki-rlA" firstAttribute="top" secondItem="Q8e-TK-5JL" secondAttribute="bottom" constant="5" id="6za-8E-cA4"/>
+                    <constraint firstItem="Q8e-TK-5JL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="72L-71-r4L"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="bUN-Ki-rlA" secondAttribute="trailing" constant="20" id="Eh6-u5-P6T"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Q8e-TK-5JL" secondAttribute="trailing" constant="20" id="GEa-lv-D5s"/>
+                    <constraint firstItem="bUN-Ki-rlA" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" constant="5" id="PpS-Cb-gdf"/>
+                    <constraint firstItem="Q8e-TK-5JL" firstAttribute="leading" secondItem="Owz-jO-w1j" secondAttribute="trailing" constant="10" id="f4G-3h-Q5v"/>
+                    <constraint firstItem="bUN-Ki-rlA" firstAttribute="leading" secondItem="Owz-jO-w1j" secondAttribute="trailing" constant="10" id="sUf-ng-dju"/>
+                    <constraint firstItem="Owz-jO-w1j" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="wLW-fM-GYg"/>
+                    <constraint firstItem="Owz-jO-w1j" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="x9V-N6-WmQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="trophyDescriptionLabel" destination="bUN-Ki-rlA" id="FxJ-7h-c7B"/>
+                <outlet property="trophyImageView" destination="Owz-jO-w1j" id="p87-09-P34"/>
+                <outlet property="trophyTitleLabel" destination="Q8e-TK-5JL" id="3GU-qG-bZm"/>
+            </connections>
+            <point key="canvasLocation" x="242" y="362.5"/>
+        </tableViewCell>
+    </objects>
+</document>
